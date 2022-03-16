@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="1">
+
+	<test verbose="2" preserve-order="true" name="Login page"
+		parallel="false" thread-count="1">
+		<parameter name="URL" value="https://staging.ueat.io/" />
+		<classes>
+			<class name="PageFactory.registerPage.UeatLoginPage" />
+		</classes>
+	</test>
+
+	<test verbose="2" preserve-order="true" name="Add Client Page"
+		parallel="false" thread-count="1">
+		<parameter name="URL" value="https://staging.ueat.io/" />
+		<classes>
+
+			<class name="PageFactory.registerPage.UeatClientPageTest" />
+
+		</classes>
+	</test>
+</suite>
+
